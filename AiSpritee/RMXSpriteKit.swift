@@ -10,8 +10,13 @@ import Foundation
 import SpriteKit
 
 typealias RendererDelegate = SKSceneDelegate
-typealias RMColor = UIColor
 
+#if iOS
+    typealias RMColor = UIColor
+    #elseif OSX
+    typealias RMColor = NSColor
+    #endif
 typealias AiBehaviour = (SKNode!) -> Void
 typealias AiCollisionBehaviour = (SKPhysicsContact) -> Void
 typealias RMSceneRenderer = AnyObject
+typealias RMXWorld = GameScene

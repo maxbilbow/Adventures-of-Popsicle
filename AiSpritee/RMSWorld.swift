@@ -9,14 +9,3 @@
 import Foundation
 import SpriteKit
 
-class RMXWorld : SKScene {
-    
-    var activeCamer: SKNode?
-    var activeSprite: SKNode!
-    
-    var isLive: Bool {
-        return !self.paused
-    }
-    
-    var sprites: [RMXSprite] = []
-}

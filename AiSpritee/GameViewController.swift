@@ -26,10 +26,10 @@ extension SKNode {
     }
 }
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, SKSceneDelegate {
     
+
     var gravity: CMAcceleration = CMAcceleration()
-    let _testing = false
     let _hasMotion = true
     
     let motionManager: CMMotionManager = CMMotionManager()
@@ -43,14 +43,26 @@ class GameViewController: UIViewController {
     var menuAccessBar: UIView?
     var pauseMenu: UIView?
 
+    var world: GameScene?
 
+    var GRAVITY: Double = 9.8
+    
+    
+    func update(currentTime: NSTimeInterval, forScene scene: SKScene) {
+        if let motion = self.motionManager.deviceMotion {
+            scene.physicsWorld.gravity.dx = CGFloat(motion.gravity.x * self.GRAVITY)
+            scene.physicsWorld.gravity.dy = CGFloat(motion.gravity.y * self.GRAVITY)
+        }
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if _hasMotion {
-            self.motionManager.startAccelerometerUpdates()
+//            self.motionManager.startAccelerometerUpdates()
             self.motionManager.startDeviceMotionUpdates()
-            self.motionManager.startGyroUpdates()
-            self.motionManager.startMagnetometerUpdates()
+//            self.motionManager.startGyroUpdates()
+//            self.motionManager.startMagnetometerUpdates()
         }
 
         
@@ -65,8 +77,10 @@ class GameViewController: UIViewController {
             
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = .AspectFill
-            
+            scene.delegate = self
             skView.presentScene(scene)
+            
+            self.world = scene
         }
     }
 
@@ -74,12 +88,35 @@ class GameViewController: UIViewController {
         return true
     }
 
+    
     override func supportedInterfaceOrientations() -> Int {
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
             return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
         } else {
             return Int(UIInterfaceOrientationMask.All.rawValue)
         }
+    }
+    func print() {
+        var print = "\n"
+        print += "boudingBox frame: \(self.world!.boundingBox.frame.print)\n"
+//        print += "  GameView frame: \(self.world!.frame.print)\n"
+//        print += " GameView bounds: \(self.world!.bounds.print)\n"
+        print += "     Scene frame: \(self.world!.scene!.frame.print)\n"
+        print += "     Scene scale: \(self.world!.scene!.xScale.toData()), \(self.world!.scene!.yScale.toData())\n"
+        print += "      View scale: \(self.world!.scene!.xScale.toData()), \(self.world!.scene!.yScale.toData())\n\n"
+        print += "      View scale: \(self.world!.scene!.size.print)\n"
+        NSLog(print)
+    }
+    
+    override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+        
+//        self.print()
+//        println()
+//        println(self.world!.scene!.description)
+//        println()
+//        println(self.world!.description)
+//        println()
+//        println(self.world?.contentScaleFactor.description)
     }
 
     override func didReceiveMemoryWarning() {

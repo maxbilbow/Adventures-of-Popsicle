@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>548AC003-E2A3-4AFD-BF78-EA925419CBCD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>973CCBDB0B6DF708810C6B5B6136C82D6C2A9DF2</key>
+		<string>https://github.com/maxbilbow/AiScene.git</string>
+		<key>9B5C915E67A2341F288F69ADE09AA64D219E260C</key>
+		<string>https://github.com/maxbilbow/RMXKit.git</string>
+		<key>D67408135A31A0EA3D79E4F9EAB39AA6CD04F356</key>
+		<string>https://github.com/maxbilbow/Adventures-of-Popsicle.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AiSpritee.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>973CCBDB0B6DF708810C6B5B6136C82D6C2A9DF2</key>
+		<string>../../../AiScene</string>
+		<key>9B5C915E67A2341F288F69ADE09AA64D219E260C</key>
+		<string>../../../RMXKit</string>
+		<key>D67408135A31A0EA3D79E4F9EAB39AA6CD04F356</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/maxbilbow/Adventures-of-Popsicle.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D67408135A31A0EA3D79E4F9EAB39AA6CD04F356</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D67408135A31A0EA3D79E4F9EAB39AA6CD04F356</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Adventures-of-Popsicle</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>973CCBDB0B6DF708810C6B5B6136C82D6C2A9DF2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AiScene</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9B5C915E67A2341F288F69ADE09AA64D219E260C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RMXKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
