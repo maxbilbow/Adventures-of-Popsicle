@@ -52,6 +52,15 @@ class GameViewController: UIViewController, SKSceneDelegate {
         if let motion = self.motionManager.deviceMotion {
             scene.physicsWorld.gravity.dx = CGFloat(motion.gravity.x * self.GRAVITY)
             scene.physicsWorld.gravity.dy = CGFloat(motion.gravity.y * self.GRAVITY)
+            
+        }
+        if let m = self.motionManager.accelerometerData {
+//            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
+//            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
+        }
+        if let m = self.motionManager.gyroData {
+//            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
+//            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
         }
 
     }
@@ -59,9 +68,9 @@ class GameViewController: UIViewController, SKSceneDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         if _hasMotion {
-//            self.motionManager.startAccelerometerUpdates()
+            self.motionManager.startAccelerometerUpdates()
             self.motionManager.startDeviceMotionUpdates()
-//            self.motionManager.startGyroUpdates()
+            self.motionManager.startGyroUpdates()
 //            self.motionManager.startMagnetometerUpdates()
         }
 

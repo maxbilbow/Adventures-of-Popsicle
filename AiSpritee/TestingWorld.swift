@@ -22,7 +22,7 @@ extension GameScene  {
 //        boundingBox.position = self.world!.center
         boundingBox.strokeColor = RMColor.redColor()
         boundingBox.physicsBody = SKPhysicsBody(edgeLoopFromRect: shape)
-        
+        boundingBox.physicsBody?.restitution = 0.9
         self.scaleMode = SKSceneScaleMode.AspectFill
         self.addChild(boundingBox)
 //        self.view!.autoresizesSubviews = true
@@ -33,6 +33,7 @@ extension GameScene  {
         self.floor = SKShapeNode(rect: shape)
         let floor = self.floor
         floor.physicsBody = SKPhysicsBody(edgeLoopFromRect: shape)
+        floor.physicsBody?.restitution = 0.9
         floor.name = "floor"
         floor.fillColor = RMColor.blackColor()
         self.addChild(floor)

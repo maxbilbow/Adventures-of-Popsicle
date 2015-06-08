@@ -46,9 +46,14 @@ class GameScene: SKScene {
         
         for touch in (touches as! Set<UITouch>) {
             let location: CGPoint = touch.locationInNode(self)
-            let ball = SKShapeNode(circleOfRadius: 10)
+            let radius = CGFloat(random() % 20 + 10)
+            let ball = SKShapeNode(circleOfRadius: radius)
+            ball.physicsBody = SKPhysicsBody(circleOfRadius: radius)
             ball.fillColor = RMX.randomColor()
             ball.position = location
+            ball.physicsBody?.restitution = 0.9
+            ball.physicsBody?.friction = 0.1
+            ball.physicsBody?.mass = radius * radius * PI_CG
 
             if let body = ball.physicsBody {
                 NSLog(body.description)
