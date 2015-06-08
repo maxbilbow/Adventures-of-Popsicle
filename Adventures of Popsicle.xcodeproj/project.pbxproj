@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C1F15FA1B25DB2D00F0A249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F15F91B25DB2D00F0A249 /* AppDelegate.swift */; };
+		6C1F15FC1B25DB2D00F0A249 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C1F15FB1B25DB2D00F0A249 /* GameScene.sks */; };
+		6C1F15FE1B25DB2D00F0A249 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F15FD1B25DB2D00F0A249 /* GameScene.swift */; };
+		6C1F16001B25DB2D00F0A249 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F15FF1B25DB2D00F0A249 /* GameViewController.swift */; };
+		6C1F16031B25DB2D00F0A249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1F16011B25DB2D00F0A249 /* Main.storyboard */; };
+		6C1F16051B25DB2D00F0A249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1F16041B25DB2D00F0A249 /* Images.xcassets */; };
+		6C1F16081B25DB2D00F0A249 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1F16061B25DB2D00F0A249 /* LaunchScreen.xib */; };
+		6C1F16141B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16131B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift */; };
+		6C1F162F1B25DB9000F0A249 /* RMXSpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F162E1B25DB9000F0A249 /* RMXSpriteKit.swift */; };
+		6C1F16361B25DB9D00F0A249 /* RMXCollider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16301B25DB9D00F0A249 /* RMXCollider.swift */; };
+		6C1F16371B25DB9D00F0A249 /* TestingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16311B25DB9D00F0A249 /* TestingWorld.swift */; };
+		6C1F163D1B25DBDE00F0A249 /* RMXNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F163C1B25DBDE00F0A249 /* RMXNode.swift */; };
+		6C3AFD7A1B25DD8500172A87 /* RMSMaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD711B25DD8500172A87 /* RMSMaths.swift */; };
+		6C3AFD7B1B25DD8500172A87 /* RMX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD721B25DD8500172A87 /* RMX.swift */; };
+		6C3AFD7C1B25DD8500172A87 /* RMXAiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD731B25DD8500172A87 /* RMXAiDelegate.swift */; };
+		6C3AFD7D1B25DD8500172A87 /* RMXDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD741B25DD8500172A87 /* RMXDebugger.swift */; };
+		6C3AFD7E1B25DD8500172A87 /* RMXFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD751B25DD8500172A87 /* RMXFunctions.swift */; };
+		6C3AFD7F1B25DD8500172A87 /* RMXSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD761B25DD8500172A87 /* RMXSprite.swift */; };
+		6C3AFD801B25DD8500172A87 /* RMXSpriteTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD771B25DD8500172A87 /* RMXSpriteTimer.swift */; };
+		6C3AFD811B25DD8500172A87 /* RMXValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD781B25DD8500172A87 /* RMXValue.swift */; };
+		6C3AFD821B25DD8500172A87 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD791B25DD8500172A87 /* UserActions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C1F160E1B25DB2D00F0A249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C1F15EC1B25DB2D00F0A249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C1F15F31B25DB2D00F0A249;
+			remoteInfo = "Adventures of Popsicle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C1F15F41B25DB2D00F0A249 /* Adventures of Popsicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventures of Popsicle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1F15F81B25DB2D00F0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1F15F91B25DB2D00F0A249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C1F15FB1B25DB2D00F0A249 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		6C1F15FD1B25DB2D00F0A249 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6C1F15FF1B25DB2D00F0A249 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6C1F16021B25DB2D00F0A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C1F16041B25DB2D00F0A249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6C1F16071B25DB2D00F0A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6C1F160D1B25DB2D00F0A249 /* Adventures of PopsicleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adventures of PopsicleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1F16121B25DB2D00F0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1F16131B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventures_of_PopsicleTests.swift; sourceTree = "<group>"; };
+		6C1F162E1B25DB9000F0A249 /* RMXSpriteKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXSpriteKit.swift; sourceTree = "<group>"; };
+		6C1F16301B25DB9D00F0A249 /* RMXCollider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXCollider.swift; sourceTree = "<group>"; };
+		6C1F16311B25DB9D00F0A249 /* TestingWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingWorld.swift; sourceTree = "<group>"; };
+		6C1F16321B25DB9D00F0A249 /* Accelormeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accelormeter.swift; sourceTree = "<group>"; };
+		6C1F16331B25DB9D00F0A249 /* AV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AV.swift; sourceTree = "<group>"; };
+		6C1F16341B25DB9D00F0A249 /* RMSWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSWorld.swift; sourceTree = "<group>"; };
+		6C1F16351B25DB9D00F0A249 /* RMSActionProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSActionProcessor.swift; sourceTree = "<group>"; };
+		6C1F163C1B25DBDE00F0A249 /* RMXNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXNode.swift; sourceTree = "<group>"; };
+		6C3AFD711B25DD8500172A87 /* RMSMaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMSMaths.swift; path = ../RMXKit/RMSMaths.swift; sourceTree = "<group>"; };
+		6C3AFD721B25DD8500172A87 /* RMX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMX.swift; path = ../RMXKit/RMX.swift; sourceTree = "<group>"; };
+		6C3AFD731B25DD8500172A87 /* RMXAiDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMXAiDelegate.swift; path = ../RMXKit/RMXAiDelegate.swift; sourceTree = "<group>"; };
+		6C3AFD741B25DD8500172A87 /* RMXDebugger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMXDebugger.swift; path = ../RMXKit/RMXDebugger.swift; sourceTree = "<group>"; };
+		6C3AFD751B25DD8500172A87 /* RMXFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMXFunctions.swift; path = ../RMXKit/RMXFunctions.swift; sourceTree = "<group>"; };
+		6C3AFD761B25DD8500172A87 /* RMXSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMXSprite.swift; path = ../RMXKit/RMXSprite.swift; sourceTree = "<group>"; };
+		6C3AFD771B25DD8500172A87 /* RMXSpriteTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMXSpriteTimer.swift; path = ../RMXKit/RMXSpriteTimer.swift; sourceTree = "<group>"; };
+		6C3AFD781B25DD8500172A87 /* RMXValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMXValue.swift; path = ../RMXKit/RMXValue.swift; sourceTree = "<group>"; };
+		6C3AFD791B25DD8500172A87 /* UserActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserActions.swift; path = ../RMXKit/UserActions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C1F15F11B25DB2D00F0A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1F160A1B25DB2D00F0A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C1F15EB1B25DB2D00F0A249 = {
+			isa = PBXGroup;
+			children = (
+				6C1F162D1B25DB4700F0A249 /* RMXKit */,
+				6C1F15F61B25DB2D00F0A249 /* Adventures of Popsicle */,
+				6C1F16101B25DB2D00F0A249 /* Adventures of PopsicleTests */,
+				6C1F15F51B25DB2D00F0A249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C1F15F51B25DB2D00F0A249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C1F15F41B25DB2D00F0A249 /* Adventures of Popsicle.app */,
+				6C1F160D1B25DB2D00F0A249 /* Adventures of PopsicleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C1F15F61B25DB2D00F0A249 /* Adventures of Popsicle */ = {
+			isa = PBXGroup;
+			children = (
+				6C1F163C1B25DBDE00F0A249 /* RMXNode.swift */,
+				6C1F162E1B25DB9000F0A249 /* RMXSpriteKit.swift */,
+				6C1F15F91B25DB2D00F0A249 /* AppDelegate.swift */,
+				6C1F15FB1B25DB2D00F0A249 /* GameScene.sks */,
+				6C1F15FD1B25DB2D00F0A249 /* GameScene.swift */,
+				6C1F15FF1B25DB2D00F0A249 /* GameViewController.swift */,
+				6C1F16301B25DB9D00F0A249 /* RMXCollider.swift */,
+				6C1F16311B25DB9D00F0A249 /* TestingWorld.swift */,
+				6C1F16321B25DB9D00F0A249 /* Accelormeter.swift */,
+				6C1F16331B25DB9D00F0A249 /* AV.swift */,
+				6C1F16341B25DB9D00F0A249 /* RMSWorld.swift */,
+				6C1F16351B25DB9D00F0A249 /* RMSActionProcessor.swift */,
+				6C1F16011B25DB2D00F0A249 /* Main.storyboard */,
+				6C1F16041B25DB2D00F0A249 /* Images.xcassets */,
+				6C1F16061B25DB2D00F0A249 /* LaunchScreen.xib */,
+				6C1F15F71B25DB2D00F0A249 /* Supporting Files */,
+			);
+			path = "Adventures of Popsicle";
+			sourceTree = "<group>";
+		};
+		6C1F15F71B25DB2D00F0A249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1F15F81B25DB2D00F0A249 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C1F16101B25DB2D00F0A249 /* Adventures of PopsicleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C1F16131B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift */,
+				6C1F16111B25DB2D00F0A249 /* Supporting Files */,
+			);
+			path = "Adventures of PopsicleTests";
+			sourceTree = "<group>";
+		};
+		6C1F16111B25DB2D00F0A249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1F16121B25DB2D00F0A249 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C1F162D1B25DB4700F0A249 /* RMXKit */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AFD711B25DD8500172A87 /* RMSMaths.swift */,
+				6C3AFD721B25DD8500172A87 /* RMX.swift */,
+				6C3AFD731B25DD8500172A87 /* RMXAiDelegate.swift */,
+				6C3AFD741B25DD8500172A87 /* RMXDebugger.swift */,
+				6C3AFD751B25DD8500172A87 /* RMXFunctions.swift */,
+				6C3AFD761B25DD8500172A87 /* RMXSprite.swift */,
+				6C3AFD771B25DD8500172A87 /* RMXSpriteTimer.swift */,
+				6C3AFD781B25DD8500172A87 /* RMXValue.swift */,
+				6C3AFD791B25DD8500172A87 /* UserActions.swift */,
+			);
+			name = RMXKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C1F15F31B25DB2D00F0A249 /* Adventures of Popsicle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1F16171B25DB2D00F0A249 /* Build configuration list for PBXNativeTarget "Adventures of Popsicle" */;
+			buildPhases = (
+				6C1F15F01B25DB2D00F0A249 /* Sources */,
+				6C1F15F11B25DB2D00F0A249 /* Frameworks */,
+				6C1F15F21B25DB2D00F0A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adventures of Popsicle";
+			productName = "Adventures of Popsicle";
+			productReference = 6C1F15F41B25DB2D00F0A249 /* Adventures of Popsicle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C1F160C1B25DB2D00F0A249 /* Adventures of PopsicleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1F161A1B25DB2D00F0A249 /* Build configuration list for PBXNativeTarget "Adventures of PopsicleTests" */;
+			buildPhases = (
+				6C1F16091B25DB2D00F0A249 /* Sources */,
+				6C1F160A1B25DB2D00F0A249 /* Frameworks */,
+				6C1F160B1B25DB2D00F0A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C1F160F1B25DB2D00F0A249 /* PBXTargetDependency */,
+			);
+			name = "Adventures of PopsicleTests";
+			productName = "Adventures of PopsicleTests";
+			productReference = 6C1F160D1B25DB2D00F0A249 /* Adventures of PopsicleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C1F15EC1B25DB2D00F0A249 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Rattle Media";
+				TargetAttributes = {
+					6C1F15F31B25DB2D00F0A249 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					6C1F160C1B25DB2D00F0A249 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 6C1F15F31B25DB2D00F0A249;
+					};
+				};
+			};
+			buildConfigurationList = 6C1F15EF1B25DB2D00F0A249 /* Build configuration list for PBXProject "Adventures of Popsicle" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C1F15EB1B25DB2D00F0A249;
+			productRefGroup = 6C1F15F51B25DB2D00F0A249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C1F15F31B25DB2D00F0A249 /* Adventures of Popsicle */,
+				6C1F160C1B25DB2D00F0A249 /* Adventures of PopsicleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C1F15F21B25DB2D00F0A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1F16081B25DB2D00F0A249 /* LaunchScreen.xib in Resources */,
+				6C1F16051B25DB2D00F0A249 /* Images.xcassets in Resources */,
+				6C1F15FC1B25DB2D00F0A249 /* GameScene.sks in Resources */,
+				6C1F16031B25DB2D00F0A249 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1F160B1B25DB2D00F0A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C1F15F01B25DB2D00F0A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3AFD821B25DD8500172A87 /* UserActions.swift in Sources */,
+				6C1F15FE1B25DB2D00F0A249 /* GameScene.swift in Sources */,
+				6C3AFD801B25DD8500172A87 /* RMXSpriteTimer.swift in Sources */,
+				6C3AFD7F1B25DD8500172A87 /* RMXSprite.swift in Sources */,
+				6C3AFD7C1B25DD8500172A87 /* RMXAiDelegate.swift in Sources */,
+				6C1F16001B25DB2D00F0A249 /* GameViewController.swift in Sources */,
+				6C3AFD7A1B25DD8500172A87 /* RMSMaths.swift in Sources */,
+				6C1F15FA1B25DB2D00F0A249 /* AppDelegate.swift in Sources */,
+				6C3AFD7E1B25DD8500172A87 /* RMXFunctions.swift in Sources */,
+				6C1F16361B25DB9D00F0A249 /* RMXCollider.swift in Sources */,
+				6C1F163D1B25DBDE00F0A249 /* RMXNode.swift in Sources */,
+				6C3AFD7D1B25DD8500172A87 /* RMXDebugger.swift in Sources */,
+				6C1F162F1B25DB9000F0A249 /* RMXSpriteKit.swift in Sources */,
+				6C3AFD811B25DD8500172A87 /* RMXValue.swift in Sources */,
+				6C1F16371B25DB9D00F0A249 /* TestingWorld.swift in Sources */,
+				6C3AFD7B1B25DD8500172A87 /* RMX.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1F16091B25DB2D00F0A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1F16141B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C1F160F1B25DB2D00F0A249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C1F15F31B25DB2D00F0A249 /* Adventures of Popsicle */;
+			targetProxy = 6C1F160E1B25DB2D00F0A249 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C1F16011B25DB2D00F0A249 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1F16021B25DB2D00F0A249 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C1F16061B25DB2D00F0A249 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1F16071B25DB2D00F0A249 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C1F16151B25DB2D00F0A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DiOS";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C1F16161B25DB2D00F0A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "-DiOS";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C1F16181B25DB2D00F0A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Adventures of Popsicle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C1F16191B25DB2D00F0A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Adventures of Popsicle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C1F161B1B25DB2D00F0A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Adventures of PopsicleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adventures of Popsicle.app/Adventures of Popsicle";
+			};
+			name = Debug;
+		};
+		6C1F161C1B25DB2D00F0A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Adventures of PopsicleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adventures of Popsicle.app/Adventures of Popsicle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C1F15EF1B25DB2D00F0A249 /* Build configuration list for PBXProject "Adventures of Popsicle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1F16151B25DB2D00F0A249 /* Debug */,
+				6C1F16161B25DB2D00F0A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1F16171B25DB2D00F0A249 /* Build configuration list for PBXNativeTarget "Adventures of Popsicle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1F16181B25DB2D00F0A249 /* Debug */,
+				6C1F16191B25DB2D00F0A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1F161A1B25DB2D00F0A249 /* Build configuration list for PBXNativeTarget "Adventures of PopsicleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1F161B1B25DB2D00F0A249 /* Debug */,
+				6C1F161C1B25DB2D00F0A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C1F15EC1B25DB2D00F0A249 /* Project object */;
+}

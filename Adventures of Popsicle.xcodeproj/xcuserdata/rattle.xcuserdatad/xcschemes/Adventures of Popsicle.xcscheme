@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CDF86771B1EF430001F270B"
-               BuildableName = "AiSpritee.app"
-               BlueprintName = "AiSpritee"
-               ReferencedContainer = "container:AiSpritee.xcodeproj">
+               BlueprintIdentifier = "6C1F15F31B25DB2D00F0A249"
+               BuildableName = "Adventures of Popsicle.app"
+               BlueprintName = "Adventures of Popsicle"
+               ReferencedContainer = "container:Adventures of Popsicle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CDF86901B1EF430001F270B"
-               BuildableName = "AiSpriteeTests.xctest"
-               BlueprintName = "AiSpriteeTests"
-               ReferencedContainer = "container:AiSpritee.xcodeproj">
+               BlueprintIdentifier = "6C1F160C1B25DB2D00F0A249"
+               BuildableName = "Adventures of PopsicleTests.xctest"
+               BlueprintName = "Adventures of PopsicleTests"
+               ReferencedContainer = "container:Adventures of Popsicle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CDF86901B1EF430001F270B"
-               BuildableName = "AiSpriteeTests.xctest"
-               BlueprintName = "AiSpriteeTests"
-               ReferencedContainer = "container:AiSpritee.xcodeproj">
+               BlueprintIdentifier = "6C1F160C1B25DB2D00F0A249"
+               BuildableName = "Adventures of PopsicleTests.xctest"
+               BlueprintName = "Adventures of PopsicleTests"
+               ReferencedContainer = "container:Adventures of Popsicle.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CDF86771B1EF430001F270B"
-            BuildableName = "AiSpritee.app"
-            BlueprintName = "AiSpritee"
-            ReferencedContainer = "container:AiSpritee.xcodeproj">
+            BlueprintIdentifier = "6C1F15F31B25DB2D00F0A249"
+            BuildableName = "Adventures of Popsicle.app"
+            BlueprintName = "Adventures of Popsicle"
+            ReferencedContainer = "container:Adventures of Popsicle.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CDF86771B1EF430001F270B"
-            BuildableName = "AiSpritee.app"
-            BlueprintName = "AiSpritee"
-            ReferencedContainer = "container:AiSpritee.xcodeproj">
+            BlueprintIdentifier = "6C1F15F31B25DB2D00F0A249"
+            BuildableName = "Adventures of Popsicle.app"
+            BlueprintName = "Adventures of Popsicle"
+            ReferencedContainer = "container:Adventures of Popsicle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CDF86771B1EF430001F270B"
-            BuildableName = "AiSpritee.app"
-            BlueprintName = "AiSpritee"
-            ReferencedContainer = "container:AiSpritee.xcodeproj">
+            BlueprintIdentifier = "6C1F15F31B25DB2D00F0A249"
+            BuildableName = "Adventures of Popsicle.app"
+            BlueprintName = "Adventures of Popsicle"
+            ReferencedContainer = "container:Adventures of Popsicle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

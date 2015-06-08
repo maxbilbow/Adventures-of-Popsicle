@@ -1,15 +1,15 @@
 //
-//  AiSpriteeTests.swift
-//  AiSpriteeTests
+//  Adventures_of_PopsicleTests.swift
+//  Adventures of PopsicleTests
 //
-//  Created by Max Bilbow on 03/06/2015.
+//  Created by Max Bilbow on 08/06/2015.
 //  Copyright (c) 2015 Rattle Media. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class AiSpriteeTests: XCTestCase {
+class Adventures_of_PopsicleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

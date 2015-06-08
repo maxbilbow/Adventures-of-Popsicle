@@ -1,17 +1,19 @@
 //
 //  GameScene.swift
-//  AiSpritee
+//  Adventures of Popsicle
 //
-//  Created by Max Bilbow on 03/06/2015.
+//  Created by Max Bilbow on 08/06/2015.
 //  Copyright (c) 2015 Rattle Media. All rights reserved.
 //
+
+import SpriteKit
 
 import SpriteKit
 
 class GameScene: SKScene {
     
     var gvc: GameViewController!
- 
+    
     var activeCamera: SKNode?
     var activeSprite: RMXSprite!
     
@@ -20,7 +22,7 @@ class GameScene: SKScene {
     }
     var boundingBox: SKShapeNode!
     var floor: SKShapeNode!
-
+    
     
     var sprites: [RMXNode] {
         return self.children.filter({ (child) -> Bool in
@@ -39,7 +41,7 @@ class GameScene: SKScene {
         myLabel.position.y = self.frame.height / 4
         self.initTestingWorld()
         self.addChild(myLabel)
-            }
+    }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
@@ -54,7 +56,7 @@ class GameScene: SKScene {
             ball.physicsBody?.restitution = 0.9
             ball.physicsBody?.friction = 0.1
             ball.physicsBody?.mass = radius * radius * PI_CG
-
+            
             if let body = ball.physicsBody {
                 NSLog(body.description)
             } else {
@@ -65,22 +67,22 @@ class GameScene: SKScene {
         
         /*
         for touch in (touches as! Set<UITouch>) {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+        let location = touch.locationInNode(self)
+        
+        let sprite = SKSpriteNode(imageNamed:"Spaceship")
+        
+        sprite.xScale = 0.5
+        sprite.yScale = 0.5
+        sprite.position = location
+        
+        let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+        
+        sprite.runAction(SKAction.repeatActionForever(action))
+        
+        self.addChild(sprite)
         } */
     }
-   
+    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }

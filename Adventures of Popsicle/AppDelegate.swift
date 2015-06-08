@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AiSpritee
+//  Adventures of Popsicle
 //
-//  Created by Max Bilbow on 03/06/2015.
+//  Created by Max Bilbow on 08/06/2015.
 //  Copyright (c) 2015 Rattle Media. All rights reserved.
 //
 

@@ -1,10 +1,14 @@
 //
 //  GameViewController.swift
-//  AiSpritee
+//  Adventures of Popsicle
 //
-//  Created by Max Bilbow on 03/06/2015.
+//  Created by Max Bilbow on 08/06/2015.
 //  Copyright (c) 2015 Rattle Media. All rights reserved.
 //
+
+import UIKit
+import SpriteKit
+
 
 import UIKit
 import SpriteKit
@@ -28,7 +32,7 @@ extension SKNode {
 
 class GameViewController: UIViewController, SKSceneDelegate {
     
-
+    
     var gravity: CMAcceleration = CMAcceleration()
     let _hasMotion = true
     
@@ -42,9 +46,9 @@ class GameViewController: UIViewController, SKSceneDelegate {
     var topBar: UIView?
     var menuAccessBar: UIView?
     var pauseMenu: UIView?
-
+    
     var world: GameScene?
-
+    
     var GRAVITY: Double = 9.8
     
     
@@ -55,14 +59,14 @@ class GameViewController: UIViewController, SKSceneDelegate {
             
         }
         if let m = self.motionManager.accelerometerData {
-//            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
-//            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
+            //            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
+            //            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
         }
         if let m = self.motionManager.gyroData {
-//            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
-//            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
+            //            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
+            //            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
         }
-
+        
     }
     
     override func viewDidLoad() {
@@ -71,9 +75,9 @@ class GameViewController: UIViewController, SKSceneDelegate {
             self.motionManager.startAccelerometerUpdates()
             self.motionManager.startDeviceMotionUpdates()
             self.motionManager.startGyroUpdates()
-//            self.motionManager.startMagnetometerUpdates()
+            //            self.motionManager.startMagnetometerUpdates()
         }
-
+        
         
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
             // Configure the view.
@@ -92,11 +96,11 @@ class GameViewController: UIViewController, SKSceneDelegate {
             self.world = scene
         }
     }
-
+    
     override func shouldAutorotate() -> Bool {
         return true
     }
-
+    
     
     override func supportedInterfaceOrientations() -> Int {
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
@@ -108,8 +112,8 @@ class GameViewController: UIViewController, SKSceneDelegate {
     func print() {
         var print = "\n"
         print += "boudingBox frame: \(self.world!.boundingBox.frame.print)\n"
-//        print += "  GameView frame: \(self.world!.frame.print)\n"
-//        print += " GameView bounds: \(self.world!.bounds.print)\n"
+        //        print += "  GameView frame: \(self.world!.frame.print)\n"
+        //        print += " GameView bounds: \(self.world!.bounds.print)\n"
         print += "     Scene frame: \(self.world!.scene!.frame.print)\n"
         print += "     Scene scale: \(self.world!.scene!.xScale.toData()), \(self.world!.scene!.yScale.toData())\n"
         print += "      View scale: \(self.world!.scene!.xScale.toData()), \(self.world!.scene!.yScale.toData())\n\n"
@@ -119,20 +123,20 @@ class GameViewController: UIViewController, SKSceneDelegate {
     
     override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
         
-//        self.print()
-//        println()
-//        println(self.world!.scene!.description)
-//        println()
-//        println(self.world!.description)
-//        println()
-//        println(self.world?.contentScaleFactor.description)
+        //        self.print()
+        //        println()
+        //        println(self.world!.scene!.description)
+        //        println()
+        //        println(self.world!.description)
+        //        println()
+        //        println(self.world?.contentScaleFactor.description)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
-
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
