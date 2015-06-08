@@ -9,6 +9,15 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    var gvc: GameViewController!
+ 
+    var world: RMXWorld!
+    
+    var activeSprite: SKNode? {
+        return self.world.activeSprite
+    }
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         let myLabel = SKLabelNode(fontNamed:"Chalkduster")

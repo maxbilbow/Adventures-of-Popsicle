@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import CoreMotion
 
 extension SKNode {
     class func unarchiveFromFile(file : String) -> SKNode? {
@@ -26,10 +27,33 @@ extension SKNode {
 }
 
 class GameViewController: UIViewController {
+    
+    var gravity: CMAcceleration = CMAcceleration()
+    let _testing = false
+    let _hasMotion = true
+    
+    let motionManager: CMMotionManager = CMMotionManager()
+    let rollSpeed: RMFloat = -1
+    
+    var moveButtonPad: UIImageView?// = RMXModels.getImage()
+    var moveButton: UIView?
+    var jumpButton: UIButton?
+    var boomButton: UIButton?
+    var topBar: UIView?
+    var menuAccessBar: UIView?
+    var pauseMenu: UIView?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if _hasMotion {
+            self.motionManager.startAccelerometerUpdates()
+            self.motionManager.startDeviceMotionUpdates()
+            self.motionManager.startGyroUpdates()
+            self.motionManager.startMagnetometerUpdates()
+        }
 
+        
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
             // Configure the view.
             let skView = self.view as! SKView
