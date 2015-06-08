@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50C562BA1B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50C562B91B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg */; };
+		50C562BB1B26303C001DDAA6 /* AV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16331B25DB9D00F0A249 /* AV.swift */; };
+		50C562BD1B2631B0001DDAA6 /* Slap 1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 50C562BC1B2631B0001DDAA6 /* Slap 1.caf */; };
 		6C1F15FA1B25DB2D00F0A249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F15F91B25DB2D00F0A249 /* AppDelegate.swift */; };
 		6C1F15FC1B25DB2D00F0A249 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C1F15FB1B25DB2D00F0A249 /* GameScene.sks */; };
 		6C1F15FE1B25DB2D00F0A249 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F15FD1B25DB2D00F0A249 /* GameScene.swift */; };
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50C562B91B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg"; sourceTree = SOURCE_ROOT; };
+		50C562BC1B2631B0001DDAA6 /* Slap 1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slap 1.caf"; sourceTree = "<group>"; };
 		6C1F15F41B25DB2D00F0A249 /* Adventures of Popsicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventures of Popsicle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C1F15F81B25DB2D00F0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C1F15F91B25DB2D00F0A249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +131,8 @@
 				6C1F16351B25DB9D00F0A249 /* RMSActionProcessor.swift */,
 				6C1F16011B25DB2D00F0A249 /* Main.storyboard */,
 				6C1F16041B25DB2D00F0A249 /* Images.xcassets */,
+				50C562BC1B2631B0001DDAA6 /* Slap 1.caf */,
+				50C562B91B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg */,
 				6C1F16061B25DB2D00F0A249 /* LaunchScreen.xib */,
 				6C1F15F71B25DB2D00F0A249 /* Supporting Files */,
 			);
@@ -254,9 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C1F16081B25DB2D00F0A249 /* LaunchScreen.xib in Resources */,
+				50C562BA1B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg in Resources */,
 				6C1F16051B25DB2D00F0A249 /* Images.xcassets in Resources */,
 				6C1F15FC1B25DB2D00F0A249 /* GameScene.sks in Resources */,
 				6C1F16031B25DB2D00F0A249 /* Main.storyboard in Resources */,
+				50C562BD1B2631B0001DDAA6 /* Slap 1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +296,7 @@
 				6C1F163D1B25DBDE00F0A249 /* RMXNode.swift in Sources */,
 				6C3AFD7D1B25DD8500172A87 /* RMXDebugger.swift in Sources */,
 				6C1F162F1B25DB9000F0A249 /* RMXSpriteKit.swift in Sources */,
+				50C562BB1B26303C001DDAA6 /* AV.swift in Sources */,
 				6C3AFD811B25DD8500172A87 /* RMXValue.swift in Sources */,
 				6C1F16371B25DB9D00F0A249 /* TestingWorld.swift in Sources */,
 				6C3AFD7B1B25DD8500172A87 /* RMX.swift in Sources */,

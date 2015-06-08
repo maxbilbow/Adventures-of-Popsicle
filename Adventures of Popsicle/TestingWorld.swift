@@ -37,6 +37,9 @@ extension GameScene  {
         floor.name = "floor"
         floor.fillColor = RMColor.blackColor()
         self.addChild(floor)
+        
+        self.crackedGlass.hidden = true
+        boundingBox.addChild(self.crackedGlass)
     
     }
 }

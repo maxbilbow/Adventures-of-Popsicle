@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-import SpriteKit
+import CoreMotion
 
 class GameScene: SKScene {
     
@@ -22,7 +22,13 @@ class GameScene: SKScene {
     }
     var boundingBox: SKShapeNode!
     var floor: SKShapeNode!
+    var crackedGlass = SKSpriteNode(imageNamed: "glass-shattered-broken-cracked-1-texture-by-aaron-pate")
     
+    var GRAVITY: Double = 9.8
+    var gravity: CMAcceleration = CMAcceleration()
+    let _hasMotion = true
+    
+    let motionManager: CMMotionManager = CMMotionManager()
     
     var sprites: [RMXNode] {
         return self.children.filter({ (child) -> Bool in
@@ -39,10 +45,23 @@ class GameScene: SKScene {
         myLabel.position = self.scene!.frame.origin// CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         myLabel.position.x = self.frame.width / 2
         myLabel.position.y = self.frame.height / 4
+        
+        if _hasMotion {
+            self.motionManager.startAccelerometerUpdates()
+            self.motionManager.startDeviceMotionUpdates()
+            self.motionManager.startGyroUpdates()
+            //            self.motionManager.startMagnetometerUpdates()
+        }
+
+        
         self.initTestingWorld()
         self.addChild(myLabel)
     }
     
+    var nodeCount = 0
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.touchesBegan(touches, withEvent: event)
+    }
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
         
@@ -57,12 +76,12 @@ class GameScene: SKScene {
             ball.physicsBody?.friction = 0.1
             ball.physicsBody?.mass = radius * radius * PI_CG
             
-            if let body = ball.physicsBody {
-                NSLog(body.description)
-            } else {
-                ball.physicsBody = SKPhysicsBody(circleOfRadius: 5)
-            }
             self.scene?.addChild(ball)
+            ++self.nodeCount
+            if self.nodeCount > 500 {
+                self.crackScreen()
+                nodeCount = 0
+            }
         }
         
         /*
@@ -82,8 +101,35 @@ class GameScene: SKScene {
         self.addChild(sprite)
         } */
     }
-    
+    var lastTime:CFTimeInterval = 99999
+    let crack = RMXAudio.player(RMXAudio.url("Slap 1", ofType: "caf"))
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        if let motion = self.motionManager.deviceMotion {
+            self.physicsWorld.gravity.dx = CGFloat(motion.gravity.x * self.GRAVITY)
+            self.physicsWorld.gravity.dy = CGFloat(motion.gravity.y * self.GRAVITY)
+            
+        }
+        let diff = currentTime - self.lastTime
+        if diff > 0.15 {
+            self.crackScreen()
+        } else if diff > 0.1 {
+            self.crack?.prepareToPlay()
+        }
+        self.lastTime = currentTime
+        
+        
+    }
+    
+    func crackScreen() {
+        RMXAudio.crack?.play()
+        self.crackedGlass.hidden = false
+        NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "resetGame", userInfo: nil, repeats: false)
+    }
+    
+    func resetGame() {
+        self.scene?.removeAllChildren()
+        self.initTestingWorld()
+//        self.crackedGlass.hidden = true
     }
 }

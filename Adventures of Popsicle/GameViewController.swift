@@ -12,7 +12,7 @@ import SpriteKit
 
 import UIKit
 import SpriteKit
-import CoreMotion
+
 
 extension SKNode {
     class func unarchiveFromFile(file : String) -> SKNode? {
@@ -30,13 +30,10 @@ extension SKNode {
     }
 }
 
-class GameViewController: UIViewController, SKSceneDelegate {
+class GameViewController: UIViewController {
     
     
-    var gravity: CMAcceleration = CMAcceleration()
-    let _hasMotion = true
     
-    let motionManager: CMMotionManager = CMMotionManager()
     let rollSpeed: RMFloat = -1
     
     var moveButtonPad: UIImageView?// = RMXModels.getImage()
@@ -49,35 +46,11 @@ class GameViewController: UIViewController, SKSceneDelegate {
     
     var world: GameScene?
     
-    var GRAVITY: Double = 9.8
-    
-    
-    func update(currentTime: NSTimeInterval, forScene scene: SKScene) {
-        if let motion = self.motionManager.deviceMotion {
-            scene.physicsWorld.gravity.dx = CGFloat(motion.gravity.x * self.GRAVITY)
-            scene.physicsWorld.gravity.dy = CGFloat(motion.gravity.y * self.GRAVITY)
-            
-        }
-        if let m = self.motionManager.accelerometerData {
-            //            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
-            //            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
-        }
-        if let m = self.motionManager.gyroData {
-            //            scene.physicsWorld.gravity.dx += CGFloat(m.acceleration.x)
-            //            scene.physicsWorld.gravity.dy += CGFloat(m.acceleration.y)
-        }
-        
-    }
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        if _hasMotion {
-            self.motionManager.startAccelerometerUpdates()
-            self.motionManager.startDeviceMotionUpdates()
-            self.motionManager.startGyroUpdates()
-            //            self.motionManager.startMagnetometerUpdates()
-        }
-        
+                
         
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
             // Configure the view.
@@ -90,7 +63,7 @@ class GameViewController: UIViewController, SKSceneDelegate {
             
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = .AspectFill
-            scene.delegate = self
+//            scene.delegate = self
             skView.presentScene(scene)
             
             self.world = scene
@@ -135,7 +108,19 @@ class GameViewController: UIViewController, SKSceneDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
+        for node in self.world!.scene!.children {
+            if let body = (node as? SKNode)?.physicsBody {
+                body.dynamic = false
+//                return
+            }
+        }
+        
+//        self.world!.crackScreen()
+        
+        
     }
+    
+    
     
     override func prefersStatusBarHidden() -> Bool {
         return true

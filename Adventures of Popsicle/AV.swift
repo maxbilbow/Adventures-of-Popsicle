@@ -9,15 +9,16 @@
 import Foundation
 import AVFoundation
 
-class RMXAudioVideo {
+class RMXAudio {
     
-    var sounds: [String:AVAudioPlayer] = [
-        UserAction.BOOM.description : RMXAudioVideo.player(RMXAudioVideo.url("Air Reverse Burst 2", ofType: "caf")),
-        UserAction.JUMP.description : RMXAudioVideo.player(RMXAudioVideo.url("Pop", ofType: "m4a")),
-        UserAction.THROW_ITEM.description : RMXAudioVideo.player(RMXAudioVideo.url("Baseball Catch", ofType: "caf")),
-        "Pop"  : RMXAudioVideo.player(RMXAudioVideo.url("Pop", ofType: "m4a")),
-        "pop2" : RMXAudioVideo.player(RMXAudioVideo.url("pop2", ofType: "m4a")),
-        "pop1" : RMXAudioVideo.player(RMXAudioVideo.url("pop1", ofType: "m4a"))
+    static let sounds: [String:AVAudioPlayer?] = [
+        UserAction.BOOM.description : RMXAudio.player(RMXAudio.url("Air Reverse Burst 2", ofType: "caf")),
+        UserAction.JUMP.description : RMXAudio.player(RMXAudio.url("Pop", ofType: "m4a")),
+        UserAction.THROW_ITEM.description : RMXAudio.player(RMXAudio.url("Baseball Catch", ofType: "caf")),
+        "Pop"  : RMXAudio.player(RMXAudio.url("Pop", ofType: "m4a")),
+        "pop2" : RMXAudio.player(RMXAudio.url("pop2", ofType: "m4a")),
+        "pop1" : RMXAudio.player(RMXAudio.url("pop1", ofType: "m4a")),
+        "slap" : RMXAudio.player(RMXAudio.url("Slap 1", ofType: "caf"))
     ]
 
     
@@ -37,8 +38,12 @@ class RMXAudioVideo {
         return false
     }
     
-    class func player(url: NSURL?) -> AVAudioPlayer {
-        return AVAudioPlayer(contentsOfURL: url, error: nil)
+    class func player(url: NSURL?) -> AVAudioPlayer? {
+        var player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player.prepareToPlay()
+        return player
     }
+    
+    static let crack = RMXAudio.player(RMXAudio.url("Slap 1", ofType: "caf"))
 
 }
