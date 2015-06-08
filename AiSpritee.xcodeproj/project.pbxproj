@@ -23,29 +23,6 @@
 		6C206C451B2588B700D83CC0 /* AV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C441B2588B700D83CC0 /* AV.swift */; };
 		6C206C551B25915D00D83CC0 /* RMXSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C541B25915D00D83CC0 /* RMXSprite.swift */; };
 		6C206C591B259B9200D83CC0 /* RMXNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C581B259B9200D83CC0 /* RMXNode.swift */; };
-		6C79CDC51B25D6EB00FE8838 /* PopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79CDC41B25D6EB00FE8838 /* PopTests.swift */; };
-		6C79CDCC1B25D6F500FE8838 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF86831B1EF430001F270B /* GameViewController.swift */; };
-		6C79CDCD1B25D6F700FE8838 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF86811B1EF430001F270B /* GameScene.swift */; };
-		6C79CDCE1B25D6FA00FE8838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF867D1B1EF430001F270B /* AppDelegate.swift */; };
-		6C79CDCF1B25D6FD00FE8838 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF867F1B1EF430001F270B /* GameScene.sks */; };
-		6C79CDD01B25D70300FE8838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF86851B1EF430001F270B /* Main.storyboard */; };
-		6C79CDD11B25D70600FE8838 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF868A1B1EF430001F270B /* LaunchScreen.xib */; };
-		6C79CDD21B25D70800FE8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF86881B1EF430001F270B /* Images.xcassets */; };
-		6C79CDD31B25D71800FE8838 /* RMSMaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3DF1B25B5820007E485 /* RMSMaths.swift */; };
-		6C79CDD41B25D71800FE8838 /* RMX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3E01B25B5820007E485 /* RMX.swift */; };
-		6C79CDD51B25D71800FE8838 /* RMXAiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3E11B25B5820007E485 /* RMXAiDelegate.swift */; };
-		6C79CDD61B25D71800FE8838 /* RMXDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3E21B25B5820007E485 /* RMXDebugger.swift */; };
-		6C79CDD71B25D71800FE8838 /* RMXFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3E31B25B5820007E485 /* RMXFunctions.swift */; };
-		6C79CDD81B25D71800FE8838 /* RMXSpriteTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3E41B25B5820007E485 /* RMXSpriteTimer.swift */; };
-		6C79CDD91B25D71800FE8838 /* RMXValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3E51B25B5820007E485 /* RMXValue.swift */; };
-		6C79CDDA1B25D71800FE8838 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C02C3E61B25B5820007E485 /* UserActions.swift */; };
-		6C79CDDB1B25D72C00FE8838 /* RMXCollider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C331B25850900D83CC0 /* RMXCollider.swift */; };
-		6C79CDDC1B25D73000FE8838 /* RMXSpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C391B25865A00D83CC0 /* RMXSpriteKit.swift */; };
-		6C79CDDD1B25D73300FE8838 /* TestingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11DBCD1B25AAE500A2ED84 /* TestingWorld.swift */; };
-		6C79CDDE1B25D73C00FE8838 /* AV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C441B2588B700D83CC0 /* AV.swift */; };
-		6C79CDDF1B25D73C00FE8838 /* RMSWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C371B2585BF00D83CC0 /* RMSWorld.swift */; };
-		6C79CDE01B25D73C00FE8838 /* RMSActionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206C351B25853900D83CC0 /* RMSActionProcessor.swift */; };
-		6C79CDE21B25D7C600FE8838 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C79CDE11B25D7C600FE8838 /* Info.plist */; };
 		6CDF867E1B1EF430001F270B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF867D1B1EF430001F270B /* AppDelegate.swift */; };
 		6CDF86801B1EF430001F270B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF867F1B1EF430001F270B /* GameScene.sks */; };
 		6CDF86821B1EF430001F270B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF86811B1EF430001F270B /* GameScene.swift */; };
@@ -57,13 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6C79CDBF1B25D6EB00FE8838 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CDF86701B1EF430001F270B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C79CDA51B25D6EA00FE8838;
-			remoteInfo = Pop;
-		};
 		6CDF86921B1EF430001F270B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CDF86701B1EF430001F270B /* Project object */;
@@ -92,11 +62,6 @@
 		6C206C4E1B25908B00D83CC0 /* RMXAi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMXAi.swift; path = ../AiScene/Source/Environment/RMXAi.swift; sourceTree = "<group>"; };
 		6C206C541B25915D00D83CC0 /* RMXSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXSprite.swift; sourceTree = "<group>"; };
 		6C206C581B259B9200D83CC0 /* RMXNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXNode.swift; sourceTree = "<group>"; };
-		6C79CDA61B25D6EA00FE8838 /* Pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C79CDBE1B25D6EA00FE8838 /* PopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C79CDC31B25D6EB00FE8838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C79CDC41B25D6EB00FE8838 /* PopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopTests.swift; sourceTree = "<group>"; };
-		6C79CDE11B25D7C600FE8838 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../.Trash/Info.plist; sourceTree = "<group>"; };
 		6CDF86781B1EF430001F270B /* AiSpritee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiSpritee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDF867C1B1EF430001F270B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CDF867D1B1EF430001F270B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,20 +91,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C79CDA31B25D6EA00FE8838 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C79CDBB1B25D6EA00FE8838 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6CDF86751B1EF430001F270B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,24 +134,6 @@
 			name = Ai;
 			sourceTree = "<group>";
 		};
-		6C79CDC11B25D6EB00FE8838 /* PopTests */ = {
-			isa = PBXGroup;
-			children = (
-				6C79CDE11B25D7C600FE8838 /* Info.plist */,
-				6C79CDC41B25D6EB00FE8838 /* PopTests.swift */,
-				6C79CDC21B25D6EB00FE8838 /* Supporting Files */,
-			);
-			path = PopTests;
-			sourceTree = "<group>";
-		};
-		6C79CDC21B25D6EB00FE8838 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6C79CDC31B25D6EB00FE8838 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		6CDF866F1B1EF430001F270B = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +141,6 @@
 				6CDF86C91B1EF60A001F270B /* Shared */,
 				6CDF867A1B1EF430001F270B /* AiSpritee */,
 				6CDF86941B1EF430001F270B /* AiSpriteeTests */,
-				6C79CDC11B25D6EB00FE8838 /* PopTests */,
 				6CDF86791B1EF430001F270B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -218,8 +150,6 @@
 			children = (
 				6CDF86781B1EF430001F270B /* AiSpritee.app */,
 				6CDF86911B1EF430001F270B /* AiSpriteeTests.xctest */,
-				6C79CDA61B25D6EA00FE8838 /* Pop.app */,
-				6C79CDBE1B25D6EA00FE8838 /* PopTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -323,41 +253,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C79CDA51B25D6EA00FE8838 /* Pop */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6C79CDCA1B25D6EB00FE8838 /* Build configuration list for PBXNativeTarget "Pop" */;
-			buildPhases = (
-				6C79CDA21B25D6EA00FE8838 /* Sources */,
-				6C79CDA31B25D6EA00FE8838 /* Frameworks */,
-				6C79CDA41B25D6EA00FE8838 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pop;
-			productName = Pop;
-			productReference = 6C79CDA61B25D6EA00FE8838 /* Pop.app */;
-			productType = "com.apple.product-type.application";
-		};
-		6C79CDBD1B25D6EA00FE8838 /* PopTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6C79CDCB1B25D6EB00FE8838 /* Build configuration list for PBXNativeTarget "PopTests" */;
-			buildPhases = (
-				6C79CDBA1B25D6EA00FE8838 /* Sources */,
-				6C79CDBB1B25D6EA00FE8838 /* Frameworks */,
-				6C79CDBC1B25D6EA00FE8838 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6C79CDC01B25D6EB00FE8838 /* PBXTargetDependency */,
-			);
-			name = PopTests;
-			productName = PopTests;
-			productReference = 6C79CDBE1B25D6EA00FE8838 /* PopTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		6CDF86771B1EF430001F270B /* AiSpritee */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CDF869B1B1EF430001F270B /* Build configuration list for PBXNativeTarget "AiSpritee" */;
@@ -402,13 +297,6 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Rattle Media";
 				TargetAttributes = {
-					6C79CDA51B25D6EA00FE8838 = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					6C79CDBD1B25D6EA00FE8838 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 6C79CDA51B25D6EA00FE8838;
-					};
 					6CDF86771B1EF430001F270B = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -433,32 +321,11 @@
 			targets = (
 				6CDF86771B1EF430001F270B /* AiSpritee */,
 				6CDF86901B1EF430001F270B /* AiSpriteeTests */,
-				6C79CDA51B25D6EA00FE8838 /* Pop */,
-				6C79CDBD1B25D6EA00FE8838 /* PopTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6C79CDA41B25D6EA00FE8838 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C79CDD21B25D70800FE8838 /* Images.xcassets in Resources */,
-				6C79CDCF1B25D6FD00FE8838 /* GameScene.sks in Resources */,
-				6C79CDD11B25D70600FE8838 /* LaunchScreen.xib in Resources */,
-				6C79CDE21B25D7C600FE8838 /* Info.plist in Resources */,
-				6C79CDD01B25D70300FE8838 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C79CDBC1B25D6EA00FE8838 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6CDF86761B1EF430001F270B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,38 +347,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C79CDA21B25D6EA00FE8838 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C79CDE01B25D73C00FE8838 /* RMSActionProcessor.swift in Sources */,
-				6C79CDD31B25D71800FE8838 /* RMSMaths.swift in Sources */,
-				6C79CDDB1B25D72C00FE8838 /* RMXCollider.swift in Sources */,
-				6C79CDCE1B25D6FA00FE8838 /* AppDelegate.swift in Sources */,
-				6C79CDDF1B25D73C00FE8838 /* RMSWorld.swift in Sources */,
-				6C79CDCD1B25D6F700FE8838 /* GameScene.swift in Sources */,
-				6C79CDCC1B25D6F500FE8838 /* GameViewController.swift in Sources */,
-				6C79CDD61B25D71800FE8838 /* RMXDebugger.swift in Sources */,
-				6C79CDD71B25D71800FE8838 /* RMXFunctions.swift in Sources */,
-				6C79CDD51B25D71800FE8838 /* RMXAiDelegate.swift in Sources */,
-				6C79CDDE1B25D73C00FE8838 /* AV.swift in Sources */,
-				6C79CDDA1B25D71800FE8838 /* UserActions.swift in Sources */,
-				6C79CDD91B25D71800FE8838 /* RMXValue.swift in Sources */,
-				6C79CDD41B25D71800FE8838 /* RMX.swift in Sources */,
-				6C79CDDC1B25D73000FE8838 /* RMXSpriteKit.swift in Sources */,
-				6C79CDD81B25D71800FE8838 /* RMXSpriteTimer.swift in Sources */,
-				6C79CDDD1B25D73300FE8838 /* TestingWorld.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C79CDBA1B25D6EA00FE8838 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C79CDC51B25D6EB00FE8838 /* PopTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6CDF86741B1EF430001F270B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,11 +384,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6C79CDC01B25D6EB00FE8838 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6C79CDA51B25D6EA00FE8838 /* Pop */;
-			targetProxy = 6C79CDBF1B25D6EB00FE8838 /* PBXContainerItemProxy */;
-		};
 		6CDF86931B1EF430001F270B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6CDF86771B1EF430001F270B /* AiSpritee */;
@@ -581,64 +411,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6C79CDC61B25D6EB00FE8838 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/AiSpritee/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		6C79CDC71B25D6EB00FE8838 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/AiSpritee/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		6C79CDC81B25D6EB00FE8838 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PopTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pop.app/Pop";
-			};
-			name = Debug;
-		};
-		6C79CDC91B25D6EB00FE8838 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PopTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pop.app/Pop";
-			};
-			name = Release;
-		};
 		6CDF86991B1EF430001F270B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -781,22 +553,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C79CDCA1B25D6EB00FE8838 /* Build configuration list for PBXNativeTarget "Pop" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C79CDC61B25D6EB00FE8838 /* Debug */,
-				6C79CDC71B25D6EB00FE8838 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		6C79CDCB1B25D6EB00FE8838 /* Build configuration list for PBXNativeTarget "PopTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C79CDC81B25D6EB00FE8838 /* Debug */,
-				6C79CDC91B25D6EB00FE8838 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		6CDF86731B1EF430001F270B /* Build configuration list for PBXProject "AiSpritee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
