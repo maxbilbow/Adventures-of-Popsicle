@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C298B9AD-3B94-4819-AC6A-FB9EB662850F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Adventures of Popsicle</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9B5C915E67A2341F288F69ADE09AA64D219E260C</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/maxbilbow/Adventures-of-Popsicle.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Adventures of Popsicle.xcodeproj</string>
+	<string>Adventures of Popsicle.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9B5C915E67A2341F288F69ADE09AA64D219E260C</key>
