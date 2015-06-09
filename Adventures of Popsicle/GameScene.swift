@@ -59,13 +59,13 @@ class GameScene: SKScene {
     }
     
     var nodeCount = 0
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.touchesBegan(touches, withEvent: event)
     }
     
-    func addNodes(touches: Set<NSObject>)  {
-        
-        for touch in (touches as! Set<UITouch>) {
+
+    func addNodes(touches: Set<UITouch>) throws  {
+        for touch in touches {
             let location: CGPoint = touch.locationInNode(self)
             let radius = CGFloat(random() % 20 + 10)
             let ball = SKShapeNode(circleOfRadius: radius)
@@ -85,8 +85,7 @@ class GameScene: SKScene {
         }
         
     }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
         
         do {

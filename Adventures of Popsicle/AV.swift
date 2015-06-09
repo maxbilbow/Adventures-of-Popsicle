@@ -39,9 +39,14 @@ class RMXAudio {
     }
     
     class func player(url: NSURL?) -> AVAudioPlayer? {
-        var player = AVAudioPlayer(contentsOfURL: url, error: nil)
-        player.prepareToPlay()
-        return player
+        do {
+            let player = try AVAudioPlayer(contentsOfURL: url!)
+            player.prepareToPlay()
+            return player
+        } catch {
+            print(error)
+            return nil
+        }
     }
     
     static let crack = RMXAudio.player(RMXAudio.url("Slap 1", ofType: "caf"))

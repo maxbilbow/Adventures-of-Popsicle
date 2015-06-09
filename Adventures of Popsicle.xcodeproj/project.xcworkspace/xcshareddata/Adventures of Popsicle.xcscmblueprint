@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D67408135A31A0EA3D79E4F9EAB39AA6CD04F356",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D67408135A31A0EA3D79E4F9EAB39AA6CD04F356" : 0,
+    "9B5C915E67A2341F288F69ADE09AA64D219E260C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C298B9AD-3B94-4819-AC6A-FB9EB662850F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D67408135A31A0EA3D79E4F9EAB39AA6CD04F356" : "Adventures-of-Popsicle\/",
+    "9B5C915E67A2341F288F69ADE09AA64D219E260C" : "RMXKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Adventures of Popsicle",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Adventures of Popsicle.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/maxbilbow\/RMXKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B5C915E67A2341F288F69ADE09AA64D219E260C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/maxbilbow\/Adventures-of-Popsicle.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D67408135A31A0EA3D79E4F9EAB39AA6CD04F356"
+    }
+  ]
+}
