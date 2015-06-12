@@ -8,8 +8,26 @@
 
 import Foundation
 import SpriteKit
+import GameKit
+
 extension GameScene  {
     func initTestingWorld() {
+        
+        if self.localPlayer == nil {
+            self.localPlayer = GKLocalPlayer.localPlayer()
+        }
+        
+        NSLog(self.localPlayer.displayName!)
+        self.localPlayer.loadFriendPlayersWithCompletionHandler({ (friends, error) -> Void in
+            NSLog("Listing friends...")
+            if let friends = friends {
+                for friend in friends {
+                    NSLog(friend.displayName!)
+                }
+            }
+        })
+        
+            
         
         self.size = self.view!.bounds.size
         var shape =  self.frame

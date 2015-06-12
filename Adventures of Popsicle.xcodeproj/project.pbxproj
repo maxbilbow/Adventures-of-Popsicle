@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501B09E71B2B07B90025AFD5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 501B09E61B2B07B90025AFD5 /* Settings.bundle */; };
+		501B09EC1B2B0C6D0025AFD5 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B09EB1B2B0C6C0025AFD5 /* GameKit.framework */; };
+		501B09EE1B2B0DC70025AFD5 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B09ED1B2B0DC70025AFD5 /* GameController.swift */; };
 		50C562BA1B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50C562B91B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg */; };
 		50C562BB1B26303C001DDAA6 /* AV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16331B25DB9D00F0A249 /* AV.swift */; };
 		50C562BD1B2631B0001DDAA6 /* Slap 1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 50C562BC1B2631B0001DDAA6 /* Slap 1.caf */; };
@@ -19,7 +22,6 @@
 		6C1F16081B25DB2D00F0A249 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1F16061B25DB2D00F0A249 /* LaunchScreen.xib */; };
 		6C1F16141B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16131B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift */; };
 		6C1F162F1B25DB9000F0A249 /* RMXSpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F162E1B25DB9000F0A249 /* RMXSpriteKit.swift */; };
-		6C1F16361B25DB9D00F0A249 /* RMXCollider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16301B25DB9D00F0A249 /* RMXCollider.swift */; };
 		6C1F16371B25DB9D00F0A249 /* TestingWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F16311B25DB9D00F0A249 /* TestingWorld.swift */; };
 		6C1F163D1B25DBDE00F0A249 /* RMXNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F163C1B25DBDE00F0A249 /* RMXNode.swift */; };
 		6C3AFD7A1B25DD8500172A87 /* RMSMaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3AFD711B25DD8500172A87 /* RMSMaths.swift */; };
@@ -44,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		501B09E61B2B07B90025AFD5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		501B09EB1B2B0C6C0025AFD5 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		501B09ED1B2B0DC70025AFD5 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		50C562B91B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg"; sourceTree = SOURCE_ROOT; };
 		50C562BC1B2631B0001DDAA6 /* Slap 1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slap 1.caf"; sourceTree = "<group>"; };
 		6C1F15F41B25DB2D00F0A249 /* Adventures of Popsicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adventures of Popsicle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,11 +64,9 @@
 		6C1F16121B25DB2D00F0A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C1F16131B25DB2D00F0A249 /* Adventures_of_PopsicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventures_of_PopsicleTests.swift; sourceTree = "<group>"; };
 		6C1F162E1B25DB9000F0A249 /* RMXSpriteKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXSpriteKit.swift; sourceTree = "<group>"; };
-		6C1F16301B25DB9D00F0A249 /* RMXCollider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXCollider.swift; sourceTree = "<group>"; };
 		6C1F16311B25DB9D00F0A249 /* TestingWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingWorld.swift; sourceTree = "<group>"; };
 		6C1F16321B25DB9D00F0A249 /* Accelormeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accelormeter.swift; sourceTree = "<group>"; };
 		6C1F16331B25DB9D00F0A249 /* AV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AV.swift; sourceTree = "<group>"; };
-		6C1F16341B25DB9D00F0A249 /* RMSWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSWorld.swift; sourceTree = "<group>"; };
 		6C1F16351B25DB9D00F0A249 /* RMSActionProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSActionProcessor.swift; sourceTree = "<group>"; };
 		6C1F163C1B25DBDE00F0A249 /* RMXNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMXNode.swift; sourceTree = "<group>"; };
 		6C3AFD711B25DD8500172A87 /* RMSMaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMSMaths.swift; path = ../RMXKit/RMSMaths.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501B09EC1B2B0C6D0025AFD5 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,9 +99,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		501B09E81B2B09500025AFD5 /* Resource classes */ = {
+			isa = PBXGroup;
+			children = (
+				6C1F16351B25DB9D00F0A249 /* RMSActionProcessor.swift */,
+				6C1F16321B25DB9D00F0A249 /* Accelormeter.swift */,
+				6C1F16331B25DB9D00F0A249 /* AV.swift */,
+			);
+			name = "Resource classes";
+			sourceTree = "<group>";
+		};
 		6C1F15EB1B25DB2D00F0A249 = {
 			isa = PBXGroup;
 			children = (
+				501B09EB1B2B0C6C0025AFD5 /* GameKit.framework */,
 				6C1F162D1B25DB4700F0A249 /* RMXKit */,
 				6C1F15F61B25DB2D00F0A249 /* Adventures of Popsicle */,
 				6C1F16101B25DB2D00F0A249 /* Adventures of PopsicleTests */,
@@ -123,18 +138,16 @@
 				6C1F15FB1B25DB2D00F0A249 /* GameScene.sks */,
 				6C1F15FD1B25DB2D00F0A249 /* GameScene.swift */,
 				6C1F15FF1B25DB2D00F0A249 /* GameViewController.swift */,
-				6C1F16301B25DB9D00F0A249 /* RMXCollider.swift */,
 				6C1F16311B25DB9D00F0A249 /* TestingWorld.swift */,
-				6C1F16321B25DB9D00F0A249 /* Accelormeter.swift */,
-				6C1F16331B25DB9D00F0A249 /* AV.swift */,
-				6C1F16341B25DB9D00F0A249 /* RMSWorld.swift */,
-				6C1F16351B25DB9D00F0A249 /* RMSActionProcessor.swift */,
+				501B09ED1B2B0DC70025AFD5 /* GameController.swift */,
+				501B09E81B2B09500025AFD5 /* Resource classes */,
 				6C1F16011B25DB2D00F0A249 /* Main.storyboard */,
 				6C1F16041B25DB2D00F0A249 /* Images.xcassets */,
 				50C562BC1B2631B0001DDAA6 /* Slap 1.caf */,
 				50C562B91B2625EE001DDAA6 /* glass-shattered-broken-cracked-1-texture-by-aaron-pate.jpg */,
 				6C1F16061B25DB2D00F0A249 /* LaunchScreen.xib */,
 				6C1F15F71B25DB2D00F0A249 /* Supporting Files */,
+				501B09E61B2B07B90025AFD5 /* Settings.bundle */,
 			);
 			path = "Adventures of Popsicle";
 			sourceTree = "<group>";
@@ -230,6 +243,12 @@
 				TargetAttributes = {
 					6C1F15F31B25DB2D00F0A249 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 668T39KN4E;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					6C1F160C1B25DB2D00F0A249 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -267,6 +286,7 @@
 				6C1F15FC1B25DB2D00F0A249 /* GameScene.sks in Resources */,
 				6C1F16031B25DB2D00F0A249 /* Main.storyboard in Resources */,
 				50C562BD1B2631B0001DDAA6 /* Slap 1.caf in Resources */,
+				501B09E71B2B07B90025AFD5 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +312,8 @@
 				6C1F16001B25DB2D00F0A249 /* GameViewController.swift in Sources */,
 				6C3AFD7A1B25DD8500172A87 /* RMSMaths.swift in Sources */,
 				6C1F15FA1B25DB2D00F0A249 /* AppDelegate.swift in Sources */,
+				501B09EE1B2B0DC70025AFD5 /* GameController.swift in Sources */,
 				6C3AFD7E1B25DD8500172A87 /* RMXFunctions.swift in Sources */,
-				6C1F16361B25DB9D00F0A249 /* RMXCollider.swift in Sources */,
 				6C1F163D1B25DBDE00F0A249 /* RMXNode.swift in Sources */,
 				6C3AFD7D1B25DD8500172A87 /* RMXDebugger.swift in Sources */,
 				6C1F162F1B25DB9000F0A249 /* RMXSpriteKit.swift in Sources */,

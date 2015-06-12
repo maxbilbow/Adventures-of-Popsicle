@@ -7,12 +7,15 @@
 //
 
 import SpriteKit
+import GameKit
 
 import CoreMotion
 
 class GameScene: SKScene {
     
     var gvc: GameViewController!
+    
+    var localPlayer: GKLocalPlayer!
     
     var activeCamera: SKNode?
     var activeSprite: RMXSprite!
@@ -93,22 +96,7 @@ class GameScene: SKScene {
         } catch {
             print(error)
         }
-        /*
-        for touch in (touches as! Set<UITouch>) {
-        let location = touch.locationInNode(self)
         
-        let sprite = SKSpriteNode(imageNamed:"Spaceship")
-        
-        sprite.xScale = 0.5
-        sprite.yScale = 0.5
-        sprite.position = location
-        
-        let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-        
-        sprite.runAction(SKAction.repeatActionForever(action))
-        
-        self.addChild(sprite)
-        } */
     }
     var lastTime:CFTimeInterval = 99999
     let crack = RMXAudio.player(RMXAudio.url("Slap 1", ofType: "caf"))
