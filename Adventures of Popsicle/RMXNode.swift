@@ -9,7 +9,11 @@
 import Foundation
 import SpriteKit
 
-class RMXNode : SKNode, RMXSprite {
+//protocol AiBehaviour {
+//    
+//}
+
+class RMXNode : SKNode {
     //RMXObject
 
     var rmxID: Int? = RMX.COUNT++
@@ -20,8 +24,8 @@ class RMXNode : SKNode, RMXSprite {
     
     //RMXSprite
     var world: RMXWorld
-    var timer: RMXSpriteTimer!
-    var aiDelegate: RMXAiDelegate?
+    var timer: NSTimer!
+    var aiDelegate: AnyObject?//RMXAiDelegate?
     var type: RMXSpriteType = .ABSTRACT
     var node: RMXNode {
         return self

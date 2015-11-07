@@ -37,9 +37,13 @@ extension SKNode {
 
 class GameViewController: UIViewController {
     
+    static var instance: GameViewController! {
+        return _instance;
+    }
     
+    private static var _instance: GameViewController!
     
-    let rollSpeed: RMFloat = -1
+    let rollSpeed: Float = -1
     
     var moveButtonPad: UIImageView?// = RMXModels.getImage()
     var moveButton: UIView?
@@ -55,6 +59,7 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        GameViewController._instance = self
                 
         
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
@@ -75,18 +80,9 @@ class GameViewController: UIViewController {
         }
     }
     
-    override func shouldAutorotate() -> Bool {
-        return true
-    }
+
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return UIInterfaceOrientationMask.AllButUpsideDown
-        } else {
-            return UIInterfaceOrientationMask.All
-        }
-    }
-    func print() {
+   func print() {
         var print = "\n"
         print += "boudingBox frame: \(self.world!.boundingBox.frame.print)\n"
         //        print += "  GameView frame: \(self.world!.frame.print)\n"
@@ -98,16 +94,7 @@ class GameViewController: UIViewController {
         NSLog(print)
     }
     
-    override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
-        
-        //        self.print()
-        //        println()
-        //        println(self.world!.scene!.description)
-        //        println()
-        //        println(self.world!.description)
-        //        println()
-        //        println(self.world?.contentScaleFactor.description)
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -125,8 +112,5 @@ class GameViewController: UIViewController {
     }
     
     
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+   
 }

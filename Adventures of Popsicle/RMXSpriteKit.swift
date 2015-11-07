@@ -12,7 +12,6 @@ import SpriteKit
 typealias RendererDelegate = SKSceneDelegate
 
 
-typealias AiBehaviour = (SKNode!) -> Void
 typealias AiCollisionBehaviour = (SKPhysicsContact) -> Void
 typealias RMSceneRenderer = AnyObject
 typealias RMXWorld = GameScene

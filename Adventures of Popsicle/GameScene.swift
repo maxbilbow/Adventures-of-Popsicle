@@ -9,7 +9,7 @@
 import SpriteKit
 import GameKit
 
-import CoreMotion
+//import CoreMotion
 
 class GameScene: SKScene {
     
@@ -18,7 +18,7 @@ class GameScene: SKScene {
     var localPlayer: GKLocalPlayer!
     
     var activeCamera: SKNode?
-    var activeSprite: RMXSprite!
+    var activeSprite: AnyObject!
     
     var isLive: Bool {
         return !self.paused
@@ -27,11 +27,16 @@ class GameScene: SKScene {
     var floor: SKShapeNode!
     var crackedGlass = SKSpriteNode(imageNamed: "glass-shattered-broken-cracked-1-texture-by-aaron-pate")
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+//        crackedGlass.frame = CGRect(x: 0, y: 0, width: 1920, height: 1080)
+        
+    }
     var GRAVITY: Double = 9.8
-    var gravity: CMAcceleration = CMAcceleration()
+//    var gravity: CMAcceleration = CMAcceleration()
     let _hasMotion = true
     
-    let motionManager: CMMotionManager = CMMotionManager()
+//    let motionManager: CMMotionManager = CMMotionManager()
     
     var sprites: [RMXNode] {
         return self.children.filter({ (child) -> Bool in
@@ -49,12 +54,6 @@ class GameScene: SKScene {
         myLabel.position.x = self.frame.width / 2
         myLabel.position.y = self.frame.height / 4
         
-        if _hasMotion {
-            self.motionManager.startAccelerometerUpdates()
-            self.motionManager.startDeviceMotionUpdates()
-            self.motionManager.startGyroUpdates()
-            //            self.motionManager.startMagnetometerUpdates()
-        }
 
         
         self.initTestingWorld()
@@ -102,11 +101,7 @@ class GameScene: SKScene {
     let crack = RMXAudio.player(RMXAudio.url("Slap 1", ofType: "caf"))
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
-        if let motion = self.motionManager.deviceMotion {
-            self.physicsWorld.gravity.dx = CGFloat(motion.gravity.x * self.GRAVITY)
-            self.physicsWorld.gravity.dy = CGFloat(motion.gravity.y * self.GRAVITY)
-            
-        }
+        
         let diff = currentTime - self.lastTime
         if diff > 0.15 {
             self.crackScreen()
@@ -119,9 +114,9 @@ class GameScene: SKScene {
     }
     
     func crackScreen() {
-        RMXAudio.crack?.play()
-        self.crackedGlass.hidden = false
-        NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "resetGame", userInfo: nil, repeats: false)
+//        RMXAudio.crack?.play()
+//        self.crackedGlass.hidden = false
+//        NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "resetGame", userInfo: nil, repeats: false)
     }
     
     func resetGame() {
